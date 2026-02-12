@@ -10,7 +10,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        version: [22.03.2]
+        version: [24.10.5]
         target: [ipq40xx/generic, mediatek/mt7622, ramips/mt7620, ramips/mt7621, ramips/mt76x8, x86/64, bcm27xx/bcm2712]
     runs-on: ubuntu-22.04
     steps:
