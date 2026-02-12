@@ -30,7 +30,7 @@ jobs:
           cd ..
           NAME=nft-fullcone-${{ matrix.version }}-${{ steps.rename-target.outputs.name }}.tar
           tar --owner=0 --group=0 --numeric-owner -H v7 -cf ${NAME} *.ipk
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: ntf-fullcone-pkgs-${{ matrix.version }}-${{ steps.rename-target.outputs.name }}
           path: '*.ipk'
